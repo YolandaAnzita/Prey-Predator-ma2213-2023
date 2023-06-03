@@ -1,0 +1,429 @@
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+canvas {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh;
+}
+
+.title div {
+  margin: 0 5vw 0 5vw;
+  font-size: 30px;
+  text-align: center;
+}
+
+.title div p {
+  margin: 0;
+}
+
+.imgTitle {
+  width: 5vw;
+}
+
+.judulTugas {
+  text-align: center;
+  font-size: 40px;
+}
+
+.judulTugas p {
+  margin: 0;
+}
+
+.disusunText {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10vh;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.nameList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.nameList div {
+  width: 20vw;
+}
+
+.photoList {
+  width: 12vw;
+  margin-top: 2vh;
+  border: 10px solid #8bc765;
+  border-radius: 15px;
+  box-shadow: rgba(139, 199, 101, 0.4) 5px 5px, rgba(139, 199, 101, 0.3) 10px 10px, rgba(139, 199, 101, 0.2) 15px 15px, rgba(139, 199, 101, 0.1) 20px 20px, rgba(139, 199, 101, 0.05) 25px 25px;
+}
+
+.bag1 {
+  display: flex;
+  flex-direction: row;
+  margin: 10vh 0 10vh 0;
+  align-items: center;
+}
+
+.definePrey {
+  margin: 0 5vw 0 10vw;
+  text-align: center;
+  border: 10px solid #A3B475;
+  border-radius: 30px;
+  background-color:#CBFBAD;
+  height:min-content;
+}
+
+.modelPrey {
+  margin: 0 10vw 0 5vw;
+  text-align: center;
+  background-image: url("img/modelprey.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.definePrey div, .modelPrey div{
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.definePrey p, .modelPrey p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 20px;
+}
+
+.modelPrey div {
+  width: 30vw;
+}
+
+.modelPrey p {
+  padding: 0 5vw 0 5vw;
+}
+
+.rantaiMakananSawah {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 10vw 10vh 10vw;
+  font-size: 25px;
+  border: 15px solid #A3B475;
+  border-radius: 30px;
+  background-color:#CBFBAD;
+}
+
+.rantaiMakananSawah div {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.rantaiMakananSawah p {
+  text-align: justify;
+  padding: 0 30px 20px 30px;
+}
+
+.rantaiImg {
+  width: 80vw;
+}
+
+.rantaiDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rumusImg {
+  margin-top: 20vh;
+  width: 60vw;
+}
+
+.scriptCanvas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scriptCanvas p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10vh 0 5vh 0;
+}
+
+.grafikImg {
+  width: 80vw;
+}
+
+.grafikDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.dafpusImg {
+  width: 70vw;
+}
+
+.dafpusDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftDiv {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.disusunDiv {
+  font-size: 30px;
+  height: 20vh;
+  font-weight: bold;
+  border: 5px solid #A3B475;
+  display: flex;
+  align-items: center;
+}
+
+.definisiDiv {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #A3B475;
+  padding: 0 20px 20px 20px;
+  height: 100%;
+}
+
+.judulDefinisi {
+  padding: 40px 0 40px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.textDefinisi {
+  text-align: justify;
+}
+
+.rightDiv {
+  margin-left: 20px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 18vh;
+  border: 5px solid #A3B475;
+  margin-bottom: 2vh;
+}
+
+.titleDiv div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 2vw 0 2vw;
+}
+
+.logoTitle{
+  width: 5vw;
+}
+
+.titleTop {
+  width: 20vw;
+  font-size: 25px;
+}
+
+.titleBot {
+  font-size: 30px;
+}
+
+.contentRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contentLeftBox {
+  width: 63%;
+}
+
+.mahasiswa {
+  border: 5px solid #A3B475;
+  padding: 20px;
+}
+
+.nameList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nameList div {
+  width: 25%;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  width: 70%;
+  margin: 2vh 0 3vh 0;
+  border: 10px solid #8bc765;
+  border-radius: 15px;
+  box-shadow: rgba(139, 199, 101, 0.4) 5px 5px, rgba(139, 199, 101, 0.3) 10px 10px, rgba(139, 199, 101, 0.2) 15px 15px, rgba(139, 199, 101, 0.1) 20px 20px, rgba(139, 199, 101, 0.05) 25px 25px;
+}
+
+.rumusDiv {
+  margin-top: 20px;
+  border: 5px solid #A3B475;
+}
+
+.rumusImg {
+  width: 100%;
+}
+
+.contentRightBox {
+  width: 33%;
+  text-align: center;
+}
+
+.rantaiDefine {
+  padding: 0 20px 0 20px;
+  border: 5px solid #A3B475;
+  height: 51.4%;
+}
+
+.rantaiDiv {
+  margin-top: 20px;
+  border: 5px solid #A3B475;
+  height: 45%;
+}
+
+.rantaiImg {
+  width: 100%;
+}
+
+.p5Div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  border: 5px solid #A3B475;
+}
+
+.iconImg {
+  width: 5vw;
+  padding: 0 2vw 0 2vw;
+}
+
+.titleScript {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 1vh;
+}
+
+.script {
+  margin: 4vh 0 5vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconScript {
+  width: 5%;
+  padding: 0 3vw 0 3vw;
+}
+
+.grafikDiv {
+  margin-top: 20px;
+  border: 5px solid #A3B475;
+  display: flex;
+  justify-content: center;
+}
+
+.grafikImg {
+  width: 90%;
+}
+
+.bottomDiv {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.kesimpulan {
+  width: 57%;
+  border: 5px solid #A3B475;
+  text-align: justify;
+  padding: 2vh 1vw 2vh 1vw;
+}
+
+.kesimpulan div {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dafpus {
+  width: 35%;
+  border: 5px solid #A3B475;
+  text-align: justify;
+  padding: 2vh 1vw 2vh 1vw;
+}
+
+.dafpus div {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}

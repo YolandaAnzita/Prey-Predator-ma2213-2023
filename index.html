@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <main>
+  </main>
+  <div class="container">
+    <div class="leftDiv">
+      <div class="disusunDiv">
+        Disusun Oleh Kelompok 6
+      </div>
+      <div class="definisiDiv">
+        <div class="judulDefinisi">
+          Definisi Model Prey-Predator
+        </div>
+        <div class="textDefinisi">
+          Model prey-predator adalah salah satu model interaksi makhluk hidup dalam suatu ekosistem dimana terdapat
+          interaksi antara mangsa (prey) dan pemangsa (predator) yang dapat mengganggu keseimbangan ekosistem jika
+          terjadi ketidakseimbangan jumlah populasi
+        </div>
+        <div style="height:10%"></div>
+        <div class="judulDefinisi">
+          Model Prey-Predator pada Peristiwa Rantai Makanan
+        </div>
+        <div class="textDefinisi">
+          Rantai makanan atau jaringan makanan adalah suatu ekosistem makhluk hidup di mana suatu organisme memakan satu
+          sama lain untuk mendapatkan energi dan nutrisi dari organisme yang dimakan. Dalam rantai makanan yang kompleks
+          terdapat produsen, konsumen tingkat 1, konsumen tingkat 2, konsumen tingkat akhir, dan dekomposer atau
+          pengurai. Oleh karena itu, rantai makanan merupakan salah satu peristiwa yang berkaitan dengan model
+          matematika, yaitu model prey-predator.
+        </div>
+      </div>
+    </div>
+    <div class="rightDiv">
+      <div class="titleDiv">
+        <img src="img/logomtkitera.png" alt="Logo MTK Itera" class="logoTitle">
+        <div>
+          <div class="titleTop">
+            Visualisasi dalam Sains Matematika
+          </div>
+          <div class="titleBot">
+            Aplikasi Model Prey - Predator Rantai Makanan dalam Ekosistem Sawah
+          </div>
+        </div>
+        <img src="img/logoitera.png" alt="Logo Itera" class="logoTitle">
+      </div>
+      <div class="contentRight">
+        <div class="contentLeftBox">
+          <div class="mahasiswa">
+            <div class="nameList">
+              <div>
+                Yolanda Dwi Putri Anzita
+              </div>
+              <div>
+                Radhika
+              </div>
+              <div>
+                Nadia Raissa Muthi
+              </div>
+              <div>
+                Riska Agustina
+              </div>
+            </div>
+            <div class="nameList">
+              <div>
+                119160050
+              </div>
+              <div>
+                120160002
+              </div>
+              <div>
+                121160049
+              </div>
+              <div>
+                121160001
+              </div>
+            </div>
+            <div class="nameList">
+              <div class="photoBorder">
+                <img class="photo" src="img/yolanda.jpg" alt="Yolanda">
+              </div>
+              <div class="photoBorder">
+                <img class="photo" src="img/radika.png" alt="Yolanda">
+              </div>
+              <div class="photoBorder">
+                <img class="photo" src="img/nadia.jpg" alt="Yolanda">
+              </div>
+              <div class="photoBorder">
+                <img class="photo" src="img/riska.jpg" alt="Yolanda">
+              </div>
+            </div>
+            <div class="nameList">
+              <div>
+                Arista Yosafat Keliat
+              </div>
+              <div>
+                Frenklyn Fenuel Febe
+              </div>
+              <div>
+                Rajib Sovbandi
+              </div>
+            </div>
+            <div class="nameList">
+              <div>
+                121160045
+              </div>
+              <div>
+                121160061
+              </div>
+              <div>
+                121160090
+              </div>
+            </div>
+            <div class="nameList">
+              <div class="photoBorder">
+                <img class="photo" src="img/arista.jpg" alt="Arista">
+              </div>
+              <div class="photoBorder">
+                <img class="photo" src="img/frenk.jpg" alt="Frenk">
+              </div>
+              <div class="photoBorder">
+                <img class="photo" src="img/rajib.jpg" alt="Rajib">
+              </div>
+            </div>
+          </div>
+          <div class="rumusDiv">
+            <img src="img/rumus.png" alt="Rumus" class="rumusImg">
+          </div>
+        </div>
+        <div class="contentRightBox">
+          <div class="rantaiDefine">
+            <div class="judulDefinisi">
+              Rantai Makanan pada Ekosistem Sawah
+            </div>
+            <div class="textDefinisi">
+              Ekosistem sawah merupakan ekosistem lahan basah buatan yang sangat berguna bagi kehidupan manusia sebagai penghasil bahan pangan. Ekosistem Sawah merupakan salah satu ekosistem dimana terdapat makhluk hidup yang saling berinteraksi satu sama lain sehingga menyebabkan adanya peristiwa rantai makanan didalamnya. salah satu contoh populasi makhluk hidup yang terdapat pada Ekosistem sawah antara lain adalah Padi, Tikus, Ular Sawah, dan Elang. 
+            </div>
+          </div>
+          <div class="rantaiDiv">
+            <img src="img/Rantai.png" alt="Rantai Makanan" class="rantaiImg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p5Div">
+    <div class="titleScript">
+      <img src="img/iconScript.png" alt="Icon" class="iconImg">
+      Gambaran Umum Model Prey-Predator pada Ekosistem Sawah
+      <img src="img/iconScript.png" alt="Icon" class="iconImg">
+    </div>
+    <div class="script">
+      <img src="img/rantaiScript.png" alt="Rantai" class="iconScript">
+      <div id="p5js-container"></div>
+      <img src="img/makananScript.png" alt="Rantai" class="iconScript">
+    </div>
+  </div>
+  <div class="grafikDiv">
+    <img src="img/grafik.png" alt="Grafik dan Penjelasan" class="grafikImg">
+  </div>
+  <div class="bottomDiv">
+    <div class="kesimpulan">
+      <div>
+        Kesimpulan
+      </div>
+      Perubahan populasi pada model Prey-Predator saling bergantungan. Perubahan Jumlah populasi pada model Prey-Predator selalu dipengaruhi oleh adanya interaksi antara mangsa dengan pemangsa. Pada model Prey-Predator, pertumbuhan populasi hanya terjadi pada saat populasi pemangsa memangsa mangsanya, begitupula penurunan populasi mangsa hanya terjadi saat ada interaksi antara pemangsa dengan mangsa. Populasi produsen dapat diasumsikan dalam 2 keadaan, yaitu kondisi saat dipengaruhi carrying capacity dimana populasi produsen tumbuh secara terbatas sehingga saat dimangsa oleh konsumen tk 1 akan terus mengalami penurunan sehingga nantinya akan mengakibatkan ketidakseimbangan ekosistem dan kondisi saat tidak dipengaruhi carrying capacity dimana populasi produsen diasumsikan selalu tumbuh konstan sehingga tidak akan berpengaruh terhadap keseimbangan ekosistem
+    </div>
+    <div class="dafpus">
+      <div>
+        DAFTAR PUSTAKA
+      </div>
+      <ul>
+        <li>
+          Modeling and simulation for the sciences (Angela B.Shiflet and George W.Shiflet
+        </li>
+        <li>
+          Aplikasi Model Matematika Predator dan prey terinfeksi kontrol pestisida pada penyebaran hama
+        </li>
+        <li>
+          wereng batang cokelat di kabupaten Bantullrham.Taufiq,Denik Agustitos.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- <div class="title">
+    <img src="img/logomtkitera.png" class="imgTitle" />
+    <div>
+      <p>
+        Visualisasi dalam Sains
+      </p>
+      <p>
+        Matematika
+      </p>
+    </div>
+    <img src="img/logoitera.png" class="imgTitle" />
+  </div>
+  <div class="judulTugas">
+    <p>
+      Aplikasi Model Prey - Predator Rantai Makanan
+    </p>
+    <p>
+      dalam Ekosistem Sawah
+    </p>
+  </div>
+  <div class="disusunText">
+    Disusun oleh Kelompok 6
+  </div>
+  <div class="cardList">
+    <div class="nameList">
+      <div>
+        Yolanda Dwi Putri Anzita
+      </div>
+      <div>
+        Radhika
+      </div>
+      <div>
+        Nadia Raissa Muthi
+      </div>
+      <div>
+        Riska Agustina
+      </div>
+    </div>
+    <div class="nameList">
+      <div>
+        119160050
+      </div>
+      <div>
+        120160002
+      </div>
+      <div>
+        121160049
+      </div>
+      <div>
+        121160001
+      </div>
+    </div>
+    <div class="nameList">
+      <div class="photoBorder">
+        <img class="photoList" src="img/yolanda.jpg" alt="Yolanda">
+      </div>
+      <div class="photoBorder">
+        <img class="photoList" src="img/radika.png" alt="Yolanda">
+      </div>
+      <div class="photoBorder">
+        <img class="photoList" src="img/nadia.jpg" alt="Yolanda">
+      </div>
+      <div class="photoBorder">
+        <img class="photoList" src="img/riska.jpg" alt="Yolanda">
+      </div>
+    </div>
+  </div>
+  <div class="cardList">
+    <div class="nameList">
+      <div>
+        Arista Yosafat Keliat
+      </div>
+      <div>
+        Frenklyn Fenuel Febe
+      </div>
+      <div>
+        Rajib Sovbandi
+      </div>
+    </div>
+    <div class="nameList">
+      <div>
+        121160045
+      </div>
+      <div>
+        121160061
+      </div>
+      <div>
+        121160090
+      </div>
+    </div>
+    <div class="nameList">
+      <div class="photoBorder">
+        <img class="photoList" src="img/arista.jpg" alt="Yolanda">
+      </div>
+      <div class="photoBorder">
+        <img class="photoList" src="img/frenk.jpg" alt="Yolanda">
+      </div>
+      <div class="photoBorder">
+        <img class="photoList" src="img/rajib.jpg" alt="Yolanda">
+      </div>
+    </div>
+  </div>
+  <div class="bag1">
+    <div class="definePrey">
+      <div>
+        Definisi Model Prey-Predator
+      </div>
+      <p>
+        Model prey-predator adalah salah satu model interaksi makhluk hidup dalam suatu ekosistem dimana terdapat
+        interaksi antara mangsa (prey) dan pemangsa (predator) yang dapat mengganggu keseimbangan ekosistem jika terjadi
+        ketidakseimbangan jumlah populasi
+      </p>
+    </div>
+    <div class="modelPrey">
+      <div>
+        Model Prey-Predator pada Peristiwa Rantai Makanan
+      </div>
+      <p>
+        Rantai makanan atau jaringan makanan adalah suatu ekosistem makhluk hidup di mana suatu organisme memakan satu
+        sama lain untuk mendapatkan energi dan nutrisi dari organisme yang dimakan. Dalam rantai makanan yang kompleks
+        terdapat produsen, konsumen tingkat 1, konsumen tingkat 2, konsumen tingkat akhir, dan dekomposer atau pengurai.
+        Oleh karena itu, rantai makanan merupakan salah satu peristiwa yang berkaitan dengan model matematika, yaitu
+        model prey-predator.
+      </p>
+    </div>
+  </div>
+  <div class="rantaiMakananSawah">
+    <div>
+      Rantai Makanan pada Ekosistem Sawah
+    </div>
+    <p>
+      Ekosistem sawah merupakan ekosistem lahan basah buatan yang sangat berguna bagi kehidupan manusia sebagai
+      penghasil bahan pangan. Ekosistem Sawah merupakan salah satu ekosistem dimana terdapat makhluk hidup yang saling
+      berinteraksi satu sama lain sehingga menyebabkan adanya peristiwa rantai makanan didalamnya. salah satu contoh
+      populasi makhluk hidup yang terdapat pada Ekosistem sawah antara lain adalah Padi, Tikus, Ular Sawah, dan Elang.
+    </p>
+  </div>
+  <div class="rantaiDiv">
+    <img src="img/rantai.png" class="rantaiImg">
+    <img src="img/rumus.png" class="rumusImg">
+  </div>
+  <div class="scriptCanvas">
+    <p>
+      Gambaran Umum Model Prey-Predator pada Ekosistem Sawah
+    </p>
+    <div>
+      <div id="p5js-container"></div>
+    </div>
+  </div>
+  <div class="grafikDiv">
+    <img src="img/grafik.png" class="grafikImg"/>
+  </div>
+  <div class="dafpusDiv">
+    <img src="img/dafpus.png" class="dafpusImg"/>
+  </div> -->
+</body>
+<script src="sketch.js"></script>
+
+</html>
